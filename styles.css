@@ -11,13 +11,10 @@ main video{
     width: 100%;
 
 }
-#videomobil{
-    min-width: 100%;
-    min-height:100%;
-    width: 100%;
-    height:min-content;
-    z-index: -2;
+#mobilvideo{
+    height: 100%;
 }
+
 #logovideo{
     margin-left: auto;
     margin-right: auto;
@@ -403,26 +400,21 @@ body{
 .ydrecocktails{
     background-color: #fff;
     display: flex;
-    height: 400px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .ydrecocktailsto{
     background-color: #fff;
-    display: flex;
-    height: 400px;
     width: 100%;
     align-items: center;
-}
-
-.ydrecocktails img{
-    margin-top:5%;
 }
 .mangosoda{
     background-color: rgba(252, 201, 201, 0.5);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -444,7 +436,7 @@ body{
 .espressomartini{
     background-color: rgba(188, 117, 193, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -467,7 +459,7 @@ body{
 .mangobreeze{
     background-color: rgba(243, 234, 207, 1);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -489,7 +481,7 @@ body{
 .mojito{
     background-color: rgba(249, 191, 220, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -512,7 +504,7 @@ body{
 .mangohazz{
     background-color: rgba(65, 39, 28, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -535,7 +527,7 @@ body{
 .moscowmule{
     background-color: rgba(37, 127, 72, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -558,7 +550,7 @@ body{
 .drymartini{
     background-color: rgba(244, 220, 208, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -581,7 +573,7 @@ body{
 .whiskysour{
     background-color: rgba(119, 4, 87, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -604,7 +596,7 @@ body{
 .pinocolada{
     background-color: rgba(48, 77, 26, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -627,7 +619,7 @@ body{
 .strawberrydaiquiri{
     background-color: rgba(61, 134, 0, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -650,7 +642,7 @@ body{
 .pornstarmartini{
     background-color: rgba(237, 206, 211, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -673,7 +665,7 @@ body{
 .longisland{
     background-color: rgba(235, 254, 104, 0.25);
     border-radius: 3%;
-    width: 30%;
+    width: 40%;
     height: 90%;
     cursor: pointer;
 }
@@ -693,9 +685,6 @@ body{
     transition: 1s ease-out;
     box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 
 /*--Her arbejder jeg med selve den side hvor flaske bliver præsenteret og der vil være tekst--*/
@@ -830,7 +819,7 @@ padding-top: 2%;
     padding: 8px 8px;
     border-radius: 2%;
     font-size: 25px;
-
+ 
     margin-top: 2%;
     cursor: pointer;
 }
@@ -974,7 +963,26 @@ padding-top: 2%;
     margin-top: 2%;
     cursor: pointer;
 }
-
+.drinkbundmango{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(215, 174, 68, 0.25);
+    display: flex;
+}
+.drinkbundmango h1{
+    color: rgba(58, 132, 7, 1);
+}
+.drinkbundmango h2{
+    color: rgba(58, 132, 7, 1);
+}
+.drinkmidtmango{
+    width: 100%;
+    background-color: rgba(58, 132, 7, 1);
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
 
 
 
@@ -1004,7 +1012,7 @@ padding-top: 2%;
     width: 25%;
     height: 100%;
     position: relative;
-    right: 5%;
+    right: 3%;
 }
 .paragraf button{
     font-family: 'Caesar Dressing', cursive;
@@ -1157,13 +1165,48 @@ hr{
     .mobilflaske{
         display: none;
     }
-   
+   #mobilevideo{
+    display: none;
+   }
+   .ydrecocktails{
+    display: flex;
+   }
+   .ydrecocktailsto{
+    display: flex;
+   }
+    #mobilmoscowmule{
+    display: none;
+   }
+    .mobil{
+    display: none;
+   }
 }
 
 
 
 /*--MOBIL LAYOUT--*/
 @media screen and (max-width:874px){
+    #mainvideo{
+        display: none;
+    }
+    /*--cocktailside--*/
+    .ydrecocktailsto{
+        display: block;
+    }
+    .ydrecocktails{
+        display: flex;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .laptop{
+        display: none;
+    }
+    .ydrecocktails h3{
+        font-size: 90%;
+    }
+
+
+
     /*--Varianter--*/
     .ydreflasketo{
         display: block;
@@ -1201,6 +1244,8 @@ hr{
     }
     .flasketop p{
         font-size: 15px;
+        text-align: center;
+        padding-right: 25%;
     }
     .flaskebund h1{
         font-size: 35px;
@@ -1241,6 +1286,7 @@ hr{
     }
     .flasketop{
         height: 500px;
+        justify-content: center;
     }
  
     /*MANGO-delen*/
@@ -1267,6 +1313,7 @@ hr{
     }
     .flasketopmango p{
         font-size: 15px;
+        padding-right: 25%;
     }
     .flaskebundmango h1{
         font-size: 35px;
@@ -1275,7 +1322,7 @@ hr{
         font-size: 15px;
     }
 
-     /*Drink side*/
+     /*Drink side - Espresson*/
      .drinkmidt{
         display: block;
      }
@@ -1296,4 +1343,18 @@ hr{
         height: 500px;
     }
     
+     /*Drink side - Mangosoda*/
+     .drinkmidtmango{
+        display: block;
+     }
+     .drinkbundmango{
+        height: 500px;
+     }
+     .flaskediv{
+        padding-left: 5%;
+     }
+     .drinkdiv{
+        display: none;
+     }
+
 }
